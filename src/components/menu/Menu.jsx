@@ -1,6 +1,8 @@
+import styles from './menu.module.css'
+
 function Menu() {
     return (
-        <div>Menu</div>
+        <div className={styles.container}>Menu </div>
     )
 }
 

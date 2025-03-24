@@ -1,0 +1,13 @@
+.container {
+    flex: 5;
+}
+
+.title {
+    margin: 50px 0;
+    font-size: 28px;
+    color: var(--text);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

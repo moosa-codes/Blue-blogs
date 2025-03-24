@@ -1,16 +1,55 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./category.module.css";
+import { FaArrowTrendUp } from "react-icons/fa6";
 
 const CategoryList = () => {
   return (
     <div className={styles.container}>
-      <h1 className={styles.heading}>Recent Trends</h1>
-      <div className={styles.allCates}>
+      <h1 className={styles.title}>Trending<FaArrowTrendUp /></h1>
+      <div className={styles.categories}>
         <div className={styles.category}>
-          <Link href={""}>
-            <Image src='/familia.png' alt="Family" width={30} height={30} />
-            <h3>Familia</h3>
+          <Link href={"/blog?cat=style"} className={`${styles.category} ${styles.family}`}>
+            <Image
+              src='/familia.png'
+              alt="Family"
+              width={30} className={styles.image}
+              height={30} />
+            Familia
+          </Link>
+          <Link href={"/blog?cat=style"} className={`${styles.category} ${styles.arts}`}>
+            <Image
+              src='/art.png'
+              alt="Arts"
+              width={30}
+              height={30}
+              className={styles.image}
+            />
+            Art
+          </Link>
+          <Link href={"/blog?cat=style"} className={`${styles.category} ${styles.coding}`}>
+            <Image
+              src='/coding.png'
+              alt="Coding" className={styles.image}
+              width={30}
+              height={30} />
+            Coding
+          </Link>
+          <Link href={"/blog?cat=style"} className={`${styles.category} ${styles.football}`}>
+            <Image
+              src='/football.png'
+              alt="Football" className={styles.image}
+              width={30}
+              height={30} />
+            Football
+          </Link>
+          <Link href={"/blog?cat=style"} className={`${styles.category} ${styles.cars}`}>
+            <Image
+              src='/cars.png' className={styles.image}
+              alt="Cars"
+              width={30}
+              height={30} />
+            Cars
           </Link>
         </div>
       </div>

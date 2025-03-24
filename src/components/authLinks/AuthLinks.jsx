@@ -14,7 +14,7 @@ const AuthLinks = () => {
 
     return (
         <>
-            {status === "loggedIn" ? (
+            {status === "notLoggedIn" ? (
                 <Link href="/login" className={styles.link}>
                     Login <CiLogin />
                 </Link>
@@ -38,7 +38,7 @@ const AuthLinks = () => {
                     <Link href="/">Home</Link>
                     <Link href="/">About</Link>
                     <Link href="/">Contact</Link>
-                    {status === "loggedIn" ? (
+                    {status === "notLoggedIn" ? (
                         <Link href="/login" className="flex items-center">
                             Login <CiLogin />
                         </Link>

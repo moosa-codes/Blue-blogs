@@ -1,3 +1,115 @@
-.container{
+.title {
+    margin: 50px 0px;
+    font-size: 28px;
+    color: var(--text);
+    font-weight: 500;
     display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.category {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-transform: capitalize;
+    width: 90%;
+    height: 80px;
+    justify-content: center;
+    border-radius: 6px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000;
+}
+
+.category.family {
+    background-color: #ebebeb;
+}
+
+.category.arts {
+    background-color: #fff5e2;
+}
+
+.category.football {
+    background-color: #e7feff;
+}
+
+.category.cars {
+    background-color: #ffe7f4;
+}
+
+.category.coding {
+    background-color: #f8ffd7;
+}
+
+.image {
+    border-radius: 50%;
+    height: 40px;
+}
+
+@media screen and (max-width: 1280px) {
+
+    .categories {
+        justify-content: center;
+    }
+
+    .category {
+        width: 70%;
+        font-weight: bold;
+        font-size: 14px;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .categories {
+        justify-content: center;
+    }
+
+    .category {
+        width: 80%;
+        font-weight: bold;
+        font-size: 14px;
+        gap: 10px;
+    }
+
+    .image {
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .categories {
+        justify-content: space-between;
+    }
+
+    .category {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        font-weight: bold;
+        font-size: 14px;
+        gap: 7px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .category {
+        display: flex;
+        flex-wrap: wrap;
+        align-items:center;
+        justify-content:center;
+        width: 100%;
+        font-weight: bold;
+        font-size: 14px;
+        gap: 30px;
+    }
 }
