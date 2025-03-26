@@ -7,7 +7,7 @@
 
 .imageContainer {
     flex: 1;
-    height: 350px;
+    height: 330px;
     position: relative;
 }
 
@@ -17,7 +17,54 @@
 
 .textContainer {
     display: flex;
-    flex: 1;
+    flex: 1.7;
     flex-direction: column;
-    gap: 30px;
+    /* border: 1px solid red; */
+    gap: 10px;
+}
+
+.date {
+    color: #b9b9b9;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.category {
+    color: palevioletred;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.desc {
+    color: var(--softText);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 5px;
+    border: none;
+    width: max-content;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.borderAni {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: var(--softBg);
+    transition: width 0.3s ease, transform 0.3s ease;
+    border-radius: 10px;
+}
+
+.button:hover .borderAni {
+    width: 100%;
+    transform: translateX(0);
 }

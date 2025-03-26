@@ -1,4 +1,78 @@
 .container {
+    margin-top: 50px;
     flex: 2;
-    border: 2px solid red;
+    /* border-left: 1px solid var(--softBg);
+    padding-left: 5px; */
+}
+
+.subTitle {
+    color: gray;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.title {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-size: 34px;
+}
+
+.items {
+    margin-top: 35px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.item {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.imageCont {
+    flex: 1;
+    aspect-ratio: 1/1;
+    position: relative;
+}
+
+.image {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.textCont {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.category {
+    padding: 3px 8px;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #fff;
+    width: max-content;
+}
+
+.category.car {
+    background-color: #ffbc74;
+}
+
+.postTitle {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--softText);
+}
+
+.detail {
+    font-size: 10px;
+}
+
+.date {
+    font-size: 10px;
+    color: gray;
 }

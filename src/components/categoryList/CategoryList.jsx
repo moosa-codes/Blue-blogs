@@ -6,7 +6,7 @@ import { FaArrowTrendUp } from "react-icons/fa6";
 const CategoryList = () => {
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Trending<FaArrowTrendUp /></h1>
+      <h1 className={styles.title}>Trending<FaArrowTrendUp size={40} color="purple" /></h1>
       <div className={styles.categories}>
         <div className={styles.category}>
           <Link href={"/blog?cat=style"} className={`${styles.category} ${styles.family}`}>
