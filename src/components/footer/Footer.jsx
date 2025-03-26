@@ -16,8 +16,8 @@ export default function Footer() {
                     We are here to provide you with the latest news, articles, and updates about technology.
                     Highly recommended for all the tech enthusiasts out there.
                     Feel free to explore and share your thoughts with us.
-                    <p className='font-bold flex items-center gap-2'><FaRegCopyright /> Copyrights Reserved 2025 | Techs</p>
                 </p>
+                <p className='font-semibold flex items-center gap-2'><FaRegCopyright /> Copyrights Reserved 2025 | Techs</p>
 
                 <div className={styles.social}>
                     <Link href="https://github.com/moosa-codes"><FaGithub style={{ color: 'var(--text)' }} title="Github" size={30} /></Link>
@@ -43,10 +43,10 @@ export default function Footer() {
                 </div>
                 <div className={styles.list}>
                     <span className={styles.listTitle}>Social</span>
-                    <Link href="https://github.com/moosa-codes"><FaGithub style={{ color: 'var(--text)' }} title="Github" size={20} /></Link>
-                    <Link href="https://www.linkedin.com/in/moosaharoon"><FaLinkedin style={{ color: 'var(--text)', borderRadius: "10px" }} title="Linked In" size={20} /></Link>
-                    <Link href="https://www.facebook.com/moosacodes"><FaFacebook style={{ color: 'var(--text)' }} title="Facebook" size={20} /></Link>
-                    <Link href="https://www.instagram.com/moosa_codes"><FaInstagram style={{ color: 'var(--text)' }} title="Instagram" size={20} /></Link>
+                    <Link href="https://github.com/moosa-codes" className='flex items-center gap-2 font-[400]'><FaGithub style={{ color: 'var(--text)' }} title="Github" size={20} />Github</Link>
+                    <Link href="https://www.linkedin.com/in/moosaharoon" className='flex items-center gap-2 font-[400]'><FaLinkedin style={{ color: 'var(--text)', borderRadius: "10px" }} title="Linked In" size={20} />Linked In</Link>
+                    <Link href="https://www.facebook.com/moosacodes" className='flex items-center gap-2 font-[400]'><FaFacebook style={{ color: 'var(--text)' }} title="Facebook" size={20} />Facebook</Link>
+                    <Link href="https://www.instagram.com/moosa_codes" className='flex items-center gap-2 font-[400]'><FaInstagram style={{ color: 'var(--text)' }} title="Instagram" size={20} />Instagram</Link>
                 </div>
             </div>
         </div>
