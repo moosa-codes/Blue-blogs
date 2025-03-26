@@ -36,10 +36,10 @@ a {
 }
 
 .dark {
-  --bg: #0E1C27;
-  --text: #BEAE7D;
-  --softBg: #757575;
-  --softText: #d2d2d2;
+  --bg: #0e1100;
+  --text: #f4ffe7;
+  --softBg: rgb(58, 64, 55);
+  --softText: #c7d1bb;
 }
 
 .container {

@@ -17,7 +17,7 @@ const CategoryList = () => {
               height={30} />
             Familia
           </Link>
-          <Link href={"/blog?cat=style"} className={`${styles.category} ${styles.arts}`}>
+          <Link href={"/blog?cat=style"} className={`${styles.category} ${styles.art}`}>
             <Image
               src='/art.png'
               alt="Arts"

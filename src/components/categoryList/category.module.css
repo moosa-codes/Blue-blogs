@@ -29,24 +29,34 @@
     color: #000;
 }
 
-.category.family {
-    background-color: #ebebeb;
-}
-
-.category.arts {
-    background-color: #fff5e2;
-}
-
-.category.football {
-    background-color: #e7feff;
-}
-
 .category.cars {
-    background-color: #ffe7f4;
+    background-color: #e5f6ff52;
+    border: 2px solid;
+    border-color: #57c4ff31;
+}
+
+.category.family {
+    background-color: #ffe3f858;
+    border: 2px solid;
+    border-color: #da85c731;
 }
 
 .category.coding {
-    background-color: #f8ffd7;
+    border: 2px solid;
+    border-color: #7fb88133;
+    background-color: #ccddcc3a;
+}
+
+.category.football {
+    background-color: #ffe8e254;
+    border: 2px solid;
+    border-color: #ff795736;
+}
+
+.category.art {
+    border: 2px solid;
+    border-color: #ffb04f45;
+    background-color: #fff1e058;
 }
 
 .image {
@@ -105,8 +115,8 @@
     .category {
         display: flex;
         flex-wrap: wrap;
-        align-items:center;
-        justify-content:center;
+        align-items: center;
+        justify-content: center;
         width: 100%;
         font-weight: bold;
         font-size: 14px;
