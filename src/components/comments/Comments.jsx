@@ -42,9 +42,51 @@ const Comments = () => {
                             <span className={styles.date}>25.03.2025</span>
                         </div>
                     </div>
-                    <p className={styles.desc}>I loved that blog and my fav car is distinc</p>
+                    <p className={styles.desc}>I loved that blog and my fav car is
+                        distincI loved that blog and
+                        I loved that blog and my fav car is distinc
+                        I loved that blog and my fav car is distinc my fav car is distincs.</p>
+                </div>
+                <div className={styles.comment} >
+                    <div className={styles.user}>
+                        <Image
+                            src={'/user.png'}
+                            alt="moosa_"
+                            width={50}
+                            height={50}
+                            className={styles.image}
+                        />
+                        <div className={styles.userInfo}>
+                            <span className={styles.username}>moosa_</span>
+                            <span className={styles.date}>25.03.2025</span>
+                        </div>
+                    </div>
+                    <p className={styles.desc}>I loved that blog and my fav car is
+                        distincI loved that blog and
+                        I loved that blog and my fav car is distinc
+                        I loved that blog and my fav car is distinc my fav car is distincs.</p>
+                </div>
+                <div className={styles.comment} >
+                    <div className={styles.user}>
+                        <Image
+                            src={'/user.png'}
+                            alt="moosa_"
+                            width={50}
+                            height={50}
+                            className={styles.image}
+                        />
+                        <div className={styles.userInfo}>
+                            <span className={styles.username}>moosa_</span>
+                            <span className={styles.date}>25.03.2025</span>
+                        </div>
+                    </div>
+                    <p className={styles.desc}>I loved that blog and my fav car is
+                        distincI loved that blog and
+                        I loved that blog and my fav car is distinc
+                        I loved that blog and my fav car is distinc my fav car is distincs.</p>
                 </div>
             </div>
+            
         </div>
     )
 }
