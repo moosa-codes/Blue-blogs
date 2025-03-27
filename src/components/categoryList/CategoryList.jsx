@@ -9,7 +9,7 @@ const CategoryList = () => {
       <h1 className={styles.title}>Trending<FaArrowTrendUp size={40} color="purple" /></h1>
       <div className={styles.categories}>
         <div className={styles.category}>
-          <Link href={"/blog?cat=style"} className={`${styles.category} ${styles.family}`}>
+          <Link href={"/blog?cat=familia"} className={`${styles.category} ${styles.family}`}>
             <Image
               src='/familia.png'
               alt="Family"
@@ -17,7 +17,7 @@ const CategoryList = () => {
               height={30} />
             Familia
           </Link>
-          <Link href={"/blog?cat=style"} className={`${styles.category} ${styles.art}`}>
+          <Link href={"/blog?cat=art"} className={`${styles.category} ${styles.art}`}>
             <Image
               src='/art.png'
               alt="Arts"
@@ -27,7 +27,7 @@ const CategoryList = () => {
             />
             Art
           </Link>
-          <Link href={"/blog?cat=style"} className={`${styles.category} ${styles.coding}`}>
+          <Link href={"/blog?cat=coding"} className={`${styles.category} ${styles.coding}`}>
             <Image
               src='/coding.png'
               alt="Coding" className={styles.image}
@@ -35,7 +35,7 @@ const CategoryList = () => {
               height={30} />
             Coding
           </Link>
-          <Link href={"/blog?cat=style"} className={`${styles.category} ${styles.football}`}>
+          <Link href={"/blog?cat=sports"} className={`${styles.category} ${styles.football}`}>
             <Image
               src='/football.png'
               alt="Football" className={styles.image}
@@ -43,7 +43,7 @@ const CategoryList = () => {
               height={30} />
             Football
           </Link>
-          <Link href={"/blog?cat=style"} className={`${styles.category} ${styles.cars}`}>
+          <Link href={"/blog?cat=cars"} className={`${styles.category} ${styles.cars}`}>
             <Image
               src='/cars.png' className={styles.image}
               alt="Cars"
