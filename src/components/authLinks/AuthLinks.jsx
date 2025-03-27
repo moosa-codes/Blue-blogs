@@ -10,7 +10,7 @@ import { IoCreateSharp } from "react-icons/io5";
 const AuthLinks = () => {
     const [open, setOpen] = useState(false);
 
-    const status = "notLoggedIn";
+    const status = "LoggedIn";
 
     return (
         <>
@@ -21,7 +21,7 @@ const AuthLinks = () => {
             ) : (
                 <>
                     <Link href="/create" className="flex items-center gap-1.5">
-                        Create <IoCreateSharp />
+                        Write <IoCreateSharp />
                     </Link>
                     <span className="flex gap-2 items-center cursor-pointer">
                         Logout <IoIosLogOut />
@@ -44,7 +44,7 @@ const AuthLinks = () => {
                         </Link>
                     ) : (
                         <>
-                            <Link href="/create">Create</Link>
+                            <Link href="/create">Write</Link>
                             <span className={styles.link}>Logout</span>
                         </>
                     )}
