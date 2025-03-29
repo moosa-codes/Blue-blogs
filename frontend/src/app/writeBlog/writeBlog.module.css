@@ -4,6 +4,12 @@
     flex-direction: column;
 }
 
+.bdesc {
+    background-color: #59595915;
+    height: 200px;
+    resize: none;
+}
+
 .select {
     margin-bottom: 50px;
     padding: 10px 20px;
@@ -11,7 +17,7 @@
     width: max-content;
 }
 
-.editor {
+.box {
     display: flex;
     gap: 20px;
     height: 700px;
@@ -19,7 +25,7 @@
 }
 
 .button,
-.addButton {
+.option {
     width: 36px;
     height: 36px;
     border-radius: 50%;
@@ -31,11 +37,11 @@
     cursor: pointer;
 }
 
-.addButton {
+.option {
     border-color: #1a8917;
 }
 
-.add {
+.options {
     display: flex;
     gap: 20px;
     background-color: var(--bg);
