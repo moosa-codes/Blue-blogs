@@ -8,11 +8,12 @@ import { MdOndemandVideo } from "react-icons/md";
 const WriteBlog = () => {
 
     const [openOptions, setOpenOptions] = useState(false);
+    const [value, setValue] = useState("");
+    // const [bold, setBold] = useState(false);
 
     return (
         <div className={styles.container}>
-            <input type="text" placeholder='Title' />
-            <textarea className={styles.bdesc} placeholder='write your blog...'></textarea>
+            <input type="text" placeholder='Title' className={styles.input} />
             <div className={styles.box}>
                 <button className={styles.button} onClick={() => setOpenOptions(!openOptions)}>
                     <CiCirclePlus size={30} />
@@ -30,9 +31,21 @@ const WriteBlog = () => {
                         <button className={styles.option}><MdOndemandVideo size={25} /></button>
                     </div>
                 )}
-
-
+                <textarea
+                    className={styles.textArea}
+                    value={value}
+                    onChange={(e) => setValue(e.target.value)}
+                    placeholder="Tell your story..."
+                ></textarea>
+                {/* <button onClick={() => setValue(value + '\n\n')} >
+                    Add a new line
+                </button>
+                <button onClick={() => setValue(value + '\b')}>Bold</button> */}
             </div>
+            <button className={styles.publish} >
+                Publish
+            </button>
+
         </div>
     )
 }

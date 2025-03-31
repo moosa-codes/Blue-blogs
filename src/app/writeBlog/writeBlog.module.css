@@ -49,6 +49,7 @@
     z-index: 999;
     width: 100%;
     left: 50px;
+    background-color:transparent;
 }
 
 .input {
@@ -66,6 +67,8 @@
 
 .textArea {
     width: 100%;
+    font-size: 16px;
+    font-weight: 300;
 }
 
 .publish {
