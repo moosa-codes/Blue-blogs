@@ -20,7 +20,7 @@ const AuthLinks = () => {
                 </Link>
             ) : (
                 <>
-                    <Link href="/create" className="flex items-center gap-1.5">
+                    <Link href="/writeBlog" className="flex items-center gap-1.5">
                         Write <IoCreateSharp />
                     </Link>
                     <span className="flex gap-2 items-center cursor-pointer">
@@ -44,7 +44,7 @@ const AuthLinks = () => {
                         </Link>
                     ) : (
                         <>
-                            <Link href="/create">Write</Link>
+                            <Link href="/writeBlog">Write</Link>
                             <span className={styles.link}>Logout</span>
                         </>
                     )}
